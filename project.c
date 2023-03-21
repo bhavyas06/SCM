@@ -37,6 +37,26 @@ int menu()
 			menu();
 			break;
 		}
+        case 4:
+        {
+            printf ("Enter two numbers: ");
+            scanf ("%d%d", &a, &b);
+            printf ("Quotient = %d\n\n", a/b);
+            menu();
+            break;
+        }
+        case 0:
+        {
+            printf ("Exit\n\n");
+            break;
+        }
+        default:
+        {
+            printf ("Invalid Option\nEnter again\n\n");
+            menu();
+            break;
+
+
 	}  
 	return 0; 
 }
