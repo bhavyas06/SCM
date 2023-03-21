@@ -15,7 +15,7 @@ int menu()
 		case 1:
 		{
 			printf ("Enter two numbers: ");
-			scanf ("%d%d", &a,&b);
+			scanf ("%d %d", &a,&b);
 			printf ("SUM = %d\n", a+b);
 			menu();
 			break;
@@ -24,8 +24,16 @@ int menu()
 		case 2:
 		{
 			printf ("Enter two numbers: ");
-			scanf ("%d%d", &a,&b);
+			scanf ("%d %d", &a,&b);
 			printf ("DIFFERENCE = %d\n", a-b);
+			menu();
+			break;
+		}
+		case 3:
+		{
+			printf("Enter two numbers: "):
+			scanf("%d %d",&a,&b);
+			printf("PRODUCT = %d\n",a*b);
 			menu();
 			break;
 		}
